@@ -256,3 +256,12 @@ button:hover {
         margin-bottom: 50px;
     }
 }
+
+
+@media (max-width: 420px) {
+    .content {
+        flex-direction: column;
+        width: 380px;
+        margin-top: 20px;
+    }
+}
