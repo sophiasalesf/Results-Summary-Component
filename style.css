@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: #ecf2ff;
     height: 100vh;
     display: flex;
@@ -14,7 +14,7 @@ body{
 
 /*fazendo o design do lado esquerdo*/
 
-.result-panel{
+.result-panel {
     flex: 1;
     height: 550px;
     width: 450px;
@@ -27,7 +27,7 @@ body{
     align-items: center;
 }
 
-.result-title{
+.result-title {
     color: #baaffb;
     font-family: 'Outfit', sans-serif;
     font-weight: normal;
@@ -35,7 +35,7 @@ body{
     text-align: center;
 }
 
-.score-circle{
+.score-circle {
     background: linear-gradient(#4b26ce, #4b37f4);
     border-radius: 100%;
     height: 230px;
@@ -47,7 +47,7 @@ body{
     align-items: center;
 }
 
-.score-value{
+.score-value {
     color: #fefdfc;
     font-family: 'Outfit', sans-serif;
     font-weight: bold;
@@ -55,7 +55,7 @@ body{
     text-align: center;
 }
 
-.score-total{
+.score-total {
     color: #8679f7;
     font-family: 'Outfit', sans-serif;
     font-weight: bold;
@@ -63,30 +63,30 @@ body{
     text-align: center;
 }
 
-.result-label{
-    color: #f7f6fe ;
+.result-label {
+    color: #f7f6fe;
     font-family: 'Outfit', sans-serif;
     font-weight: 100px;
     font-size: 35px;
     margin-top: 40px;
 }
 
-.score-description{
+.score-description {
     color: #b6b2fc;
     font-family: 'Outfit', sans-serif;
     font-weight: normal;
     font-size: 20px;
     text-align: center;
-    max-width: 280px;
+    width: 280px;
     margin-top: 20px;
 }
 
 /*fazendo o design do lado direito*/
 
 
-.content{
+.content {
     background-color: #ffffff;
-    height: 600px;
+    min-height: 600px;
     width: 900px;
     border-radius: 30px;
     box-shadow: 0.1px 0.1px 50px #b1c5fc;
@@ -94,11 +94,11 @@ body{
     flex-direction: row;
 }
 
-.summary-menu{
+.summary-menu {
     flex: 1;
 }
 
-.summary-title{
+.summary-title {
     color: #303b59;
     font-family: 'Outfit', sans-serif;
     font-size: 28px;
@@ -106,7 +106,7 @@ body{
     margin-left: 40px;
 }
 
-.summary-statistic p{
+.summary-statistic p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -118,95 +118,95 @@ body{
     border-radius: 15px;
 }
 
-.summary-statistic p img{
+.summary-statistic p img {
     margin-left: 15px;
     margin-right: 18px;
     height: 23px;
 }
 
-.reaction >*:first-child{
+.reaction>*:first-child {
     color: #d56f76;
     font-size: 18px;
     font-weight: bold;
 }
 
-.memory >*:first-child{
+.memory>*:first-child {
     color: #f8cd6b;
     font-size: 18px;
     font-weight: bold;
 }
 
-.verbal >*:first-child{
+.verbal>*:first-child {
     color: #4cb99c;
     font-size: 18px;
     font-weight: bold;
 }
 
-.visual >*:first-child{
+.visual>*:first-child {
     color: #3f44a7;
     font-size: 18px;
     font-weight: bold;
 }
 
-.reaction > *:nth-child(2) span{
+.reaction>*:nth-child(2) span {
     color: #303b59;
     font-weight: bold;
     font-size: 18px;
     margin-right: 2px;
 }
 
-.memory > *:nth-child(2) span{
+.memory>*:nth-child(2) span {
     color: #303b59;
     font-weight: bold;
     font-size: 18px;
     margin-right: 2px;
 }
 
-.verbal > *:nth-child(2) span{
+.verbal>*:nth-child(2) span {
     color: #303b59;
     font-weight: bold;
     font-size: 18px;
     margin-right: 2px;
 }
 
-.visual > *:nth-child(2) span{
+.visual>*:nth-child(2) span {
     color: #303b59;
     font-weight: bold;
     font-size: 18px;
     margin-right: 2px;
 }
 
-.reaction >*:last-child{
+.reaction>*:last-child {
     color: #9c97a0;
     margin-right: 20px;
     font-size: 18px;
 }
 
-.memory >*:last-child{
+.memory>*:last-child {
     color: #9c97a0;
     margin-right: 20px;
     font-size: 18px;
 }
 
-.verbal >*:last-child{
+.verbal>*:last-child {
     color: #9c97a0;
     margin-right: 20px;
     font-size: 18px;
 }
 
-.visual >*:last-child{
+.visual>*:last-child {
     color: #9c97a0;
     margin-right: 20px;
     font-size: 18px;
 }
 
-.summary-button{
+.summary-button {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-button{
+button {
     color: #eef0f2;
     font-family: 'Outfit', sans-serif;
     font-size: 16px;
@@ -218,7 +218,41 @@ button{
     border: none;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
     background: linear-gradient(#4b26ce, #4b37f4);
+}
+
+@media (max-width: 600px) {
+
+    body {
+        align-items: start;
+    }
+
+    .content {
+        flex-direction: column;
+        width: 500px;
+        margin-top: 20px;
+    }
+
+    .result-panel {
+        width: 100%;
+    }
+
+    .score-description {
+        width: 350px;
+        margin-bottom: 50px;
+    }
+
+    .score-circle{
+        height: 200px;
+        width: 200px;
+    }
+
+    button{
+        font-size: 24px;
+        height: 60px;
+        width: 80%;
+        margin-bottom: 50px;
+    }
 }
