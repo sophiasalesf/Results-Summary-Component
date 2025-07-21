@@ -28,10 +28,12 @@ Componente de resumo de resultados construído com HTML e CSS, baseado em um lay
 
 ## Screenshot
 
-<img width="1330" height="920" alt="image" src="https://github.com/user-attachments/assets/c58d422b-d71b-4227-9f59-3ab58e62bad6" />
+<img width="1249" height="719" alt="image" src="https://github.com/user-attachments/assets/d770bdba-fe6e-4bd6-ad9e-45349fb79ec2" />
 
 ## Screenshot 2
 
 <img width="1172" height="670" alt="image" src="https://github.com/user-attachments/assets/978b5aec-a384-4b74-aa7e-6c9a018f38fb" />
 
 ## Acesse em:
+
+https://sophiasalesf.github.io/Results-Summary-Component/
